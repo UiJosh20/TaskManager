@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+
+        <h1>Task Manager</h1>
+        <div class="task-container">
+            <ul>
+                <li><a href="index.html">Add Task</a></li>
+                <li><a href="task.html">Tasks</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section class="task-form">
+        <div class="form">
+            <div id="alertSuccess"></div>
+            <div id="alertDanger"></div>
+            <div>
+                <input type="text" placeholder="Task Name" id="taskName" required>
+            </div>
+
+            <div>
+
+                <input type="date" placeholder="Due Date" id="date" required>
+            </div>
+
+            <div>
+                <input type="time" placeholder="Due Time" id="time" required>
+            </div>
+
+            <div>
+                <select id="priority" required>
+                    <option value="low">Low</option>
+                    <option value="medium">Medium</option>
+                    <option value="high">High</option>
+                </select>
+            </div>
+            <div>
+                <textarea placeholder="Description" id="desp" required></textarea>
+            </div>
+            <button type="submit" onclick="addTask()">Add Task</button>
+        </div>
+    
+    </section>
+    <script src="index.js"></script>
+</body>
+</html>

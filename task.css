@@ -1,0 +1,119 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: aliceblue;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px;
+    background-color: #003268;
+    color: white;
+}
+
+h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.task-container a{
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    }
+    .task-container ul{
+        list-style: none;
+     display: flex;
+     gap: 10px;
+    }
+    .task-container li{
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: white;
+        cursor: pointer;
+    }
+    .task-container li:hover{
+        background-color: #007bff;
+        color: white;
+    }
+    .task-container li a{
+        color: black;
+    }
+    .task-container li a:hover{
+        color: white;
+    }
+    
+
+    .taskCon{
+        background-color: white;
+        padding: 10px;
+        margin: 10px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .taskTable,td{
+        border: 2px solid black;
+        border-collapse: collapse;
+        
+    }
+    .taskTable{
+        width: 100%;
+        border-radius: 20%;
+    }
+    .taskTable th,td{
+        padding: 10px;
+        text-align: center;
+        
+    }
+
+    .delete{
+        background-color: rgb(163, 2, 2);
+        color: white;
+        padding: 5px;
+        border-radius: 5px;
+        cursor: pointer;
+        border: none;
+    }
+    .edit{
+        background-color: rgb(235, 172, 0);
+        padding: 5px;
+        border-radius: 5px;
+        cursor: pointer;
+        border: none;
+        width: 70px;
+    }
+    @media screen and (max-width: 480px) {
+        nav{
+            padding: 20px;
+        }
+        .task-container ul li{
+            padding: 5px;
+            font-size: 12px;
+        }
+       
+        h1{
+            font-size: 13px;
+        }
+        .task-form{
+            display: block;
+            padding: 5px 20px;
+        }
+        .taskTable{
+            width: 100%;
+        }
+        .taskTable th,td{
+            padding: 2px;
+            text-align: center;
+            font-size: 12px;
+            
+        }
+        
+    }

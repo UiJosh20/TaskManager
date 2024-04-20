@@ -1,0 +1,147 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: aliceblue;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px;
+    background-color: #003268;
+    color: white;
+}
+
+.alertSuccess{
+    background-color: green;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.alertDanger{
+    background-color: red;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+.task-form{
+    display: flex;
+    justify-content: center;
+}
+h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+}
+.form{
+    margin-top: 30px;
+    background-color: white;
+    padding: 20px 40px 10px 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: 60%;
+
+}
+
+.form div input{
+    width: 100%;
+    margin: 10px 0px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form div button{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+.form select{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.form textarea{
+    width: 100%;
+    padding: 10px;
+    margin: 20px 0px 0px 0px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form  button{
+    background-color: #0056b3;
+    border: none;
+    width: 100%;
+    color: white;
+    font-size: bold;
+    padding: 12px;
+    margin: 10px 0px;
+}
+
+.task-container a{
+text-decoration: none;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+font-size: 14px;
+}
+.task-container ul{
+    list-style: none;
+ display: flex;
+ gap: 10px;
+}
+.task-container li{
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: white;
+    cursor: pointer;
+}
+.task-container li:hover{
+    background-color: #007bff;
+    color: white;
+}
+.task-container li a{
+    color: black;
+}
+.task-container li a:hover{
+    color: white;
+}
+
+@media screen and (max-width: 480px) {
+    nav{
+        padding: 20px;
+    }
+    .task-container ul li{
+        padding: 5px;
+        font-size: 12px;
+    }
+    .form{
+       
+        background-color: white;
+        padding: 20px 15px ;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        width: 100% !important;
+    
+    }
+    h1{
+        font-size: 13px;
+    }
+    .task-form{
+        display: block;
+        padding: 5px 20px;
+    }
+    
+}
