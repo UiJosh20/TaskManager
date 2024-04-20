@@ -120,3 +120,42 @@ function editTask(index) {
     displayTasks();
   }
 }
+
+$(document).ready(function() {
+  $.ajax({
+    url: 'https://ipinfo.io/json',
+    method: 'GET',
+    success: function(response) {
+      var country = response.country;
+      $('#userCountry').html('<p>User is from: ' + country + '</p>');
+    },
+    error: function(xhr, status, error) {
+      console.error('Error fetching user country:', error);
+      $('#userCountry').html('<p>Error fetching user country</p>');
+    }
+  });
+});
+
+
+// function country(){
+
+//   $.ajax({
+//     url: 'https://ipinfo.io/json',
+//     method: 'GET',
+//     success: function(response) {
+//       // Extract country from the response
+//       var country = response.country;
+
+//       // Display the country in the console
+//       console.log('User is from: ' + country);
+
+//       // You can use the country information here as needed
+//       // For example, you can store it in localStorage or display it on the page
+//     },
+//     error: function(xhr, status, error) {
+//       console.error('Error fetching user country:', error);
+//     }
+//   });
+// };
+
+// country();
