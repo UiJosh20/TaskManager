@@ -123,7 +123,8 @@ function editTask(index) {
 
 $(document).ready(function() {
   $.ajax({
-    url: 'https://freegeoip.app/json/',
+    url: 'https://ipinfo.io/json',
+
     method: 'GET',
     success: function(response) {
       console.log(response)
