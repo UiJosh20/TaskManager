@@ -89,6 +89,16 @@ h1{
     font-size: bold;
     padding: 12px;
     margin: 10px 0px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.task-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 30px;
 }
 
 .task-container a{

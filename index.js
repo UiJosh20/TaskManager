@@ -13,6 +13,9 @@ function addTask() {
             Please add a task
             </p>
         `;
+        setTimeout(()=>{
+          document.getElementById("alertDanger").innerHTML = ""
+        }, 2000)
   } else {
     var taskObject = {
       task: task,
@@ -36,6 +39,9 @@ function addTask() {
             Task added to list successfully
             </p>
         `;
+        setTimeout(()=>{
+          document.getElementById("alertSuccess").innerHTML = ""
+        }, 1000)
 
     setTimeout(() => {
       window.location.href = "task.html";
