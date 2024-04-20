@@ -121,35 +121,35 @@ function editTask(index) {
   }
 }
 
-// $(document).ready(function() {
-//   $.ajax({
-//     url: 'https://freegeoip.app/json/',
-//     method: 'GET',
-//     success: function(response) {
-//       console.log(response)
-//       var country = response.country_name;
-//       $('#userCountry').html('<p>User is from: ' + country + '</p>');
-//     },
-//     error: function(xhr, status, error) {
-//       console.error('Error fetching user country:', error);
-//       $('#userCountry').html('<p>Error fetching user country</p>');
-//     }
-//   });
-// });
+$(document).ready(function() {
+  $.ajax({
+    url: 'https://freegeoip.app/json/',
+    method: 'GET',
+    success: function(response) {
+      console.log(response)
+      var country = response.country_name;
+      $('#userCountry').html('<p>User is from: ' + country + '</p>');
+    },
+    error: function(xhr, status, error) {
+      console.error('Error fetching user country:', error);
+      $('#userCountry').html('<p>Error fetching user country</p>');
+    }
+  });
+});
 
 
 
-// $(document).ready(function() {
-//   $.ajax({
-//     url: 'https://ipinfo.io/json',
-//     method: 'GET',
-//     success: function(response) {
-//       var city = response.city;
-//       $('#userCity').html('<p>User is from: ' + city + '</p>');
-//     },
-//     error: function(xhr, status, error) {
-//       console.error('Error fetching user country:', error);
-//       $('#userCity').html('<p>Error fetching user city</p>');
-//     }
-// })
-// })
+$(document).ready(function() {
+  $.ajax({
+    url: 'https://ipinfo.io/json',
+    method: 'GET',
+    success: function(response) {
+      var city = response.city;
+      $('#userCity').html('<p>User is from: ' + city + '</p>');
+    },
+    error: function(xhr, status, error) {
+      console.error('Error fetching user country:', error);
+      $('#userCity').html('<p>Error fetching user city</p>');
+    }
+})
+})
