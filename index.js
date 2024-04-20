@@ -58,9 +58,9 @@ var tasks = JSON.parse(localStorage.getItem("tasks")) || [];
 function displayTasks() {
   var taskTable = $("#taskTable");
 
-  taskTable.html("");
-
-  if (tasks) {
+  if (tasks && tasks.length > 0) {
+   
+    taskTable.html("");
     tasks.forEach((task, index) => {
       taskTable.append(`
             <tr>
@@ -78,8 +78,11 @@ function displayTasks() {
             </tr>
         `);
     });
+  } else {
+    taskTable.html(`<tr><td colspan="7"><h3>No task added</h3></td></tr>`);
   }
 }
+
 displayTasks();
 
 function deleteTask(index) {
