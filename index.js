@@ -51,7 +51,7 @@ function isEmpty(...values) {
 
 // Display tasks
 
-var tasks = JSON.parse(localStorage.getItem("tasks"));
+var tasks = JSON.parse(localStorage.getItem("tasks")) || [];
 
 function displayTasks() {
   var taskTable = document.getElementById("taskTable");
