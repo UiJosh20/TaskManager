@@ -124,11 +124,9 @@ function editTask(index) {
 $(document).ready(function() {
   $.ajax({
     url: 'https://ipinfo.io/json',
-
     method: 'GET',
     success: function(response) {
-      console.log(response)
-      var country = response.country_name;
+      var country = response.country;
       $('#userCountry').html('<p>User is from: ' + country + '</p>');
     },
     error: function(xhr, status, error) {
